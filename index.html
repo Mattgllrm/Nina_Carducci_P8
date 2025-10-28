@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nina Carducci - Photographe | Portfolio et Services en Iles-de-France</title> <!--ajout title + meta L6-->
   <meta name="description" content="Nina Carducci, photographe professionnelle en Île-de-France et Bordeaux. Découvrez son portfolio, ses services de shooting, retouches et albums photo personnalisés.">
+  <meta name="keywords" content="photographe, photographie, portrait, shooting, Bordeaux">
   <!--Schemas.org-->
   <script type="application/ld+json">
 	{
@@ -14,7 +15,7 @@
 		"image": "https://mattgllrm.github.io/Nina_Carducci_P8/assets/images/nina.webp",
 		"description": "Photographe professionnelle à Bordeaux et en Iles-de-France. Portraits, mariages, shooting et retouches photo.",
 		"url": "https://mattgllrm.github.io/Nina_Carducci_P8/",
-		"telephone": "+33556677889",
+		"telephone": "+33 5 56 67 78 89",
 		"priceRange": "€€",
 		"openingHours": "Mo-Fr 10:00-19:00",
 		"address": {
@@ -211,13 +212,13 @@
 	</figure>
 </section>
 </main>
-<footer id="contact">       <!--div en footer-->  <!--Enfaite créé un footer avec ses informations-->
+<div id="contact">       
 	<div class="container">
 		<div class="form-container">
 			<h2>Une question ? Une demande de devis ?</h2> <!--h3 en h2-->
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="" method="post">
-				<label for="nom">Nom</label> <!--rajouter attribut for=-->
+				<label for="nom">Nom</label>         <!--rajouter attribut for=-->
 				<input type="text" name="nom" id="nom">
 				<label for="email">Email</label>
 				<input type="email" name="email" id="email">
@@ -227,7 +228,22 @@
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.webp" alt="Photo d’un appareil photo professionnel" loading="lazy">
+			<img src="./assets/images/camera.webp" alt="Appareil photo" loading="lazy">
+		</div>
+	</div>
+</div>
+<footer>
+	<h2 itemprop="name"> Nina Carducci</h2>
+	<div class="infos">
+		<div class="location" itemprop="adress" itemscope itemtype="https://schemas.org/PostalAddress">
+			<p itemprop="streetAddress">Adresse : 68 Avenue Alsace-Lorraine</p>			
+			<span itemprop="addressLocality">Ville : Bordeaux</span>
+			<span itemprop="postalCode">Code Postal : 33200</span>
+		</div>
+		<div class="phone">
+			<p itemprop="openingHours" content="Mo-Fr 10:00-19:00"> Disponible du lundi au vendredi</p>
+			<p>de 10h à 19h au :</p>
+			<span itemprop="telephone"> 05 56 67 78 29</span>
 		</div>
 	</div>
 </footer>

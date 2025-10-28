@@ -5,3 +5,70 @@ body {
 	margin: auto;
 	min-width: 550px;
 }
+
+/* Footer global */
+footer {
+    background-color: #1a1a1a;  /* fond sombre */
+    color: #fff;               /* texte clair */
+    padding: 40px 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Conteneur interne */
+footer .infos {
+    display: flex;
+    flex-wrap: wrap;       /* pour responsive */
+    gap: 40px;             /* espace entre les blocs */
+    margin-top: 20px;
+}
+
+/* Titre du footer */
+footer h2 {
+    font-family: 'Spectral', serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Bloc adresse */
+footer .location {
+    flex: 1 1 250px; /* largeur minimale + flexibilité */
+}
+
+footer .location p,
+footer .location span {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Bloc téléphone et horaires */
+footer .phone {
+    flex: 1 1 250px;
+}
+
+footer .phone p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+footer .phone strong {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 1.1rem;
+}
+
+/* Responsive : empilement sur petits écrans */
+@media (max-width: 600px) {
+    footer .infos {
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer h2 {
+        text-align: center;
+    }
+    footer .location, footer .phone {
+        flex: unset;
+        text-align: center;
+    }
+}
