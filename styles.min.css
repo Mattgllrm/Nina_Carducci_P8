@@ -6,23 +6,21 @@ body {
 	min-width: 550px;
 }
 
-/* Footer global */
 footer {
-    background-color: #1a1a1a;  /* fond sombre */
-    color: #fff;               /* texte clair */
+    background-color: #1a1a1a;  
+    color: #fff;               
     padding: 40px 20px;
     font-family: 'Inter', sans-serif;
 }
 
-/* Conteneur interne */
 footer .infos {
     display: flex;
-    flex-wrap: wrap;       /* pour responsive */
-    gap: 40px;             /* espace entre les blocs */
+    flex-wrap: wrap;      
+    gap: 40px;             
     margin-top: 20px;
 }
 
-/* Titre du footer */
+
 footer h2 {
     font-family: 'Spectral', serif;
     font-size: 1.8rem;
@@ -30,9 +28,9 @@ footer h2 {
     font-weight: 700;
 }
 
-/* Bloc adresse */
+
 footer .location {
-    flex: 1 1 250px; /* largeur minimale + flexibilité */
+    flex: 1 1 250px; 
 }
 
 footer .location p,
@@ -42,7 +40,7 @@ footer .location span {
     line-height: 1.5;
 }
 
-/* Bloc téléphone et horaires */
+
 footer .phone {
     flex: 1 1 250px;
 }
@@ -58,7 +56,7 @@ footer .phone strong {
     font-size: 1.1rem;
 }
 
-/* Responsive : empilement sur petits écrans */
+
 @media (max-width: 600px) {
     footer .infos {
         flex-direction: column;
